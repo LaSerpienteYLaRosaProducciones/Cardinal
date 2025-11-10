@@ -5,7 +5,7 @@ body:
     id: version
     attributes:
       label: Version
-      value: "26.02"
+      value: "26.22"
     validations:
       required: true
   - type: dropdown
