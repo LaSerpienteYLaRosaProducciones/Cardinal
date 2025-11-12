@@ -1,3 +1,22 @@
+# Bat Cardinal
+
+Builds of the Cardinal virtual modular synthesizer with the Sanguine Modules collection included.
+
+This project is in no way affiliated with DISTRHO, so... if something is broken in this version only, please don't bother them.
+
+Additional plugins:
+
+- [Sanguine Mutants](https://github.com/Bloodbat/SanguineMutants)
+- [Sanguine Monsters](https://github.com/Bloodbat/SanguineMonsters)
+
+Builds are available for Windows 64 bit, Intel based 64 bit Linux and both Arm and Intel based Apple hardware only.
+
+Do note that, at the moment, **both the official DISTRHO Cardinal and Bat Cardinal can't be installed at the same time**: it is either one or the other (this may change in the future if these builds are still necessary).
+
+The original readme follows.
+
+---
+
 # DISTRHO Cardinal
 
 *Cardinal, the Rack!*
