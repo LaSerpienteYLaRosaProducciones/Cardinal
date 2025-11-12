@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug with Cardinal
+description: Report a Bat Cardinal bug (applies to Sanguine Mutants and Sanguine Monsters ONLY)
 body:
   - type: input
     id: version
