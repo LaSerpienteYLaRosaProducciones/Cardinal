@@ -851,6 +851,10 @@ void addThemeMenuItems(Menu*, ModuleTheme*) {}
 #undef modelWerner
 #undef tanh_pade
 
+// Sanguine Modules
+#include "SanguineModules/SanguineModulesCommon/src/themes.hpp"
+#include "SanguineModules/src/plugin.hpp"
+
 // Sapphire
 #include "Sapphire/src/plugin.hpp"
 
@@ -1012,6 +1016,7 @@ Plugin* pluginInstance__rackwindows;
 Plugin* pluginInstance__RCM;
 Plugin* pluginInstance__RebelTech;
 Plugin* pluginInstance__repelzen;
+Plugin* pluginInstance__SanguineModules;
 Plugin* pluginInstance__sapphire;
 Plugin* pluginInstance__sonusmodular;
 Plugin* pluginInstance__StarlingVia;
@@ -3205,6 +3210,67 @@ static void initStatic__repelzen()
     }
 }
 
+static void initStatic__SanguineModules()
+{
+    Plugin* const p = new Plugin;
+    pluginInstance__SanguineModules = p;
+
+    const StaticPluginLoader spl(p, "SanguineModules");
+    if (spl.ok())
+    {
+        // Mutants
+        p->addModel(modelFunes);
+        p->addModel(modelMutantsBlank);
+        p->addModel(modelApices);
+        p->addModel(modelAleae);
+        p->addModel(modelNodi);
+        p->addModel(modelContextus);
+        p->addModel(modelNebulae);
+        p->addModel(modelEtesia);
+        p->addModel(modelMortuus);
+        p->addModel(modelFluctus);
+        p->addModel(modelIncurvationes);
+        p->addModel(modelDistortiones);
+        p->addModel(modelMutuus);
+        p->addModel(modelExplorator);
+        p->addModel(modelMarmora);
+        p->addModel(modelAnuli);
+        p->addModel(modelVelamina);
+        p->addModel(modelAestus);
+        p->addModel(modelTemulenti);
+        p->addModel(modelVimina);
+        p->addModel(modelScalaria);
+        p->addModel(modelNix);
+        p->addModel(modelAnsa);
+
+        // Monsters
+        p->addModel(modelSuperSwitch81);
+        p->addModel(modelSuperSwitch18);
+        p->addModel(modelMonstersBlank);
+        p->addModel(modelDollyX);
+        p->addModel(modelOraculus);
+        p->addModel(modelRaiju);
+        p->addModel(modelSphinx);
+        p->addModel(modelBrainz);
+        p->addModel(modelBukavac);
+        p->addModel(modelDungeon);
+        p->addModel(modelKitsune);
+        p->addModel(modelOubliette);
+        p->addModel(modelMedusa);
+        p->addModel(modelAion);
+        p->addModel(modelWerewolf);
+        p->addModel(modelAlchemist);
+        p->addModel(modelChronos);
+        p->addModel(modelFortuna);
+        p->addModel(modelAlembic);
+        p->addModel(modelDenki);
+        p->addModel(modelManus);
+        p->addModel(modelCrucible);
+
+        getDefaultSanguineTheme();
+    }
+}
+
 static void initStatic__Sapphire()
 {
     Plugin* const p = new Plugin;
@@ -3752,6 +3818,7 @@ void initStaticPlugins()
     initStatic__RCM();
     initStatic__RebelTech();
     initStatic__repelzen();
+    initStatic__SanguineModules();
     initStatic__Sapphire();
     initStatic__sonusmodular();
     initStatic__StarlingVia();

@@ -1036,6 +1036,152 @@ PLUGIN_FILES += $(filter-out repelzen/src/repelzen.cpp,$(wildcard repelzen/src/*
 REPELZEN_CUSTOM = Blank Mixer Werner tanh_pade
 
 # --------------------------------------------------------------
+# Sanguine Modules
+PLUGIN_FILES += $(filter-out SanguineModules/SanguineMutants/src/plugin.cpp,$(wildcard SanguineModules/SanguineMutants/src/*.cpp))
+PLUGIN_FILES += $(filter-out SanguineModules/SanguineMonsters/src/plugin.cpp,$(wildcard SanguineModules/SanguineMonsters/src/*.cpp))
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/stmlib/utils/random.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/stmlib/dsp/atan.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/stmlib/dsp/units.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/parasites_stmlib/utils/parasites_random.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/parasites_stmlib/dsp/parasites_atan.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/parasites_stmlib/dsp/parasites_units.cc
+
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/*.cc)
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/chords/*.cc)
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/engine/*.cc)
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/engine2/*.cc)
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/fm/*.cc)
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/speech/*.cc)
+PLUGIN_FILES += $(wildcard SanguineModules/SanguineMutants/eurorack/plaits/dsp/physical_modelling/*.cc)
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/plaits/resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/processors.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/drums/bass_drum.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/drums/fm_drum.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/drums/high_hat.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/drums/snare_drum.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/modulations/lfo.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/modulations/multistage_envelope.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/pulse_processor/pulse_shaper.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/pulse_processor/pulse_randomizer.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/peaks/number_station/number_station.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/tides2/poly_slope_generator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/tides2/ramp/ramp_extractor.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/tides2/resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/braids/macro_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/braids/analog_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/braids/digital_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/braids/resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/braids/quantizer.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_macro_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_digital_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_analog_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_quantizer.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_stack.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/renaissance_harmonics.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/vocalist/vocalist.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/vocalist/sam.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/vocalist/wordlist.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/renaissance/vocalist/rendertabs.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/dsp/correlator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/dsp/granular_processor.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/dsp/mu_law.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/dsp/pvoc/frame_transformation.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/dsp/pvoc/phase_vocoder.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/dsp/pvoc/stft.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/clouds/resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/dsp/etesia_granular_processor.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/etesia_resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/dsp/etesia_correlator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/dsp/etesia_mu_law.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/dsp/pvoc/etesia_frame_transformation.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/dsp/pvoc/etesia_phase_vocoder.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/clouds_parasite/dsp/pvoc/etesia_stft.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/deadman_processors.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/deadman_resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/drums/deadman_bass_drum.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/drums/deadman_fm_drum.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/drums/deadman_high_hat.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/drums/deadman_snare_drum.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/modulations/deadman_lfo.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/modulations/deadman_multistage_envelope.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/pulse_processor/deadman_pulse_shaper.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/pulse_processor/deadman_pulse_randomizer.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/number_station/deadman_number_station.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/number_station/deadman_bytebeats.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/deadman/drums/deadman_cymbal.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/fluctus_granular_processor.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/fluctus_resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/fluctus_correlator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/fluctus_mu_law.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/pvoc/fluctus_spectral_clouds_transformation.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/pvoc/fluctus_phase_vocoder.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/pvoc/fluctus_stft.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/fluctus/dsp/fluctus_kammerl_player.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/warps/dsp/modulator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/warps/dsp/oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/warps/dsp/vocoder.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/warps/dsp/filter_bank.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/warps/resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/distortiones/dsp/distortiones_modulator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/distortiones/dsp/distortiones_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/distortiones/dsp/distortiones_vocoder.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/distortiones/dsp/distortiones_filter_bank.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/distortiones/distortiones_resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/mutuus/dsp/mutuus_modulator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/mutuus/dsp/mutuus_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/mutuus/dsp/mutuus_vocoder.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/mutuus/dsp/mutuus_filter_bank.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/mutuus/mutuus_resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/random/t_generator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/random/x_y_generator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/random/output_channel.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/random/lag_processor.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/random/quantizer.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/ramp/ramp_extractor.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/marbles/resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/rings/dsp/fm_voice.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/rings/dsp/part.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/rings/dsp/string_synth_part.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/rings/dsp/string.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/rings/dsp/resonator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/rings/resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/tides/generator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/tides/resources.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/eurorack/tides/plotter.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/bumps/bumps_generator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/bumps/bumps_resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/scalaria/dsp/scalaria_modulator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/scalaria/dsp/scalaria_oscillator.cc
+PLUGIN_FILES += SanguineModules/SanguineMutants/alt_firmware/scalaria/scalaria_resources.cc
+
+PLUGIN_FILES += SanguineModules/SanguineModulesCommon/src/sanguinecomponents.cpp
+PLUGIN_FILES += SanguineModules/SanguineModulesCommon/src/sanguinehelpers.cpp
+PLUGIN_FILES += SanguineModules/SanguineModulesCommon/src/themes.cpp
+
+SANGUINEMODULES_CUSTOM = clouds stmlib plaits braids marbles tides tides2 rings warps Clouds Plaits Braids Marbles Tides Rings Tides2 Warps
+
+# --------------------------------------------------------------
 # Sapphire
 
 PLUGIN_FILES += $(filter-out Sapphire/src/plugin.cpp,$(wildcard Sapphire/src/*.cpp))
@@ -1496,6 +1642,7 @@ RESOURCE_FILES += Mog/res
 RESOURCE_FILES += MUS-X/presets
 RESOURCE_FILES += nonlinearcircuits/res
 RESOURCE_FILES += ParableInstruments/res/Neil.png
+RESOURCE_FILES += SanguineModules/res
 RESOURCE_FILES += surgext/build/surge-data/configuration.xml
 RESOURCE_FILES += surgext/build/surge-data/fx_presets
 RESOURCE_FILES += surgext/build/surge-data/wavetables
@@ -2052,6 +2199,11 @@ endif
 %/surgext/build/surge-data/windows.wt: surgext/surge/resources/surge-shared/windows.wt
 	-@mkdir -p "$(shell dirname $@)"
 	$(SILENT)ln -sf $(abspath $<) $@
+
+%/SanguineModules/res:
+	-@mkdir -p "$@"
+	cp -R SanguineModules/SanguineMutants/res/* $@/
+	cp -R SanguineModules/SanguineMonsters/res/* $@/
 
 # --------------------------------------------------------------
 # Build commands
@@ -2747,6 +2899,20 @@ $(BUILD_DIR)/repelzen/%.cpp.o: repelzen/%.cpp
 	$(SILENT)$(CXX) $< $(BUILD_CXX_FLAGS) -c -o $@ \
 		$(foreach m,$(REPELZEN_CUSTOM),$(call custom_module_names,$(m),repelzen)) \
 		-DpluginInstance=pluginInstance__repelzen
+
+$(BUILD_DIR)/SanguineModules/%.o: SanguineModules/%
+	-@mkdir -p "$(shell dirname $(BUILD_DIR)/$<)"
+	@echo "Compiling $<"
+	$(SILENT)$(CXX) $< $(BUILD_CXX_FLAGS) -std=gnu++17 -c -o $@ \
+		$(foreach m,$(SANGUINEMODULES_CUSTOM),$(call custom_module_names,$(m),SanguineModules)) \
+		-DpluginInstance=pluginInstance__SanguineModules \
+		-DNOASM \
+		-DBRAIDS_LFO_FIX \
+		-ISanguineModules/SanguineModulesCommon/src \
+		-ISanguineModules/SanguineModulesCommon/pcgcpp \
+		-ISanguineModules/SanguineMutants/eurorack \
+		-ISanguineModules/SanguineMutants/alt_firmware \
+		-Wno-unused-local-typedefs
 
 $(BUILD_DIR)/Sapphire/%.cpp.o: Sapphire/%.cpp
 	-@mkdir -p "$(shell dirname $(BUILD_DIR)/$<)"
