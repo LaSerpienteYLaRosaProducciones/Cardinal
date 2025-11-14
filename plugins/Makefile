@@ -1179,7 +1179,7 @@ PLUGIN_FILES += SanguineModules/SanguineModulesCommon/src/sanguinecomponents.cpp
 PLUGIN_FILES += SanguineModules/SanguineModulesCommon/src/sanguinehelpers.cpp
 PLUGIN_FILES += SanguineModules/SanguineModulesCommon/src/themes.cpp
 
-SANGUINEMODULES_CUSTOM = clouds stmlib plaits braids marbles tides tides2 rings warps Clouds Plaits Braids Marbles Tides Rings Tides2 Warps
+SANGUINEMODULES_CUSTOM = clouds stmlib plaits braids marbles tides tides2 rings warps peaks Clouds Plaits Braids Marbles Tides Rings Tides2 Warps Peaks
 
 # --------------------------------------------------------------
 # Sapphire
