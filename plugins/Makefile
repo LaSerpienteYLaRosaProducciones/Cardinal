@@ -2922,8 +2922,8 @@ $(BUILD_DIR)/SanguineMutants/%.o: SanguineMutants/%
 		-DCARDINALMUTANTS \
 		-ISanguineMutants/SanguineModulesCommon/src \
 		-ISanguineMutants/SanguineModulesCommon/pcgcpp \
-		-ISanguineMutants/SanguineMutants/eurorack \
-		-ISanguineMutants/SanguineMutants/alt_firmware \
+		-ISanguineMutants/eurorack \
+		-ISanguineMutants/alt_firmware \
 		-Wno-unused-local-typedefs
 
 $(BUILD_DIR)/Sapphire/%.cpp.o: Sapphire/%.cpp
