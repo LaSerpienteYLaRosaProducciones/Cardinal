@@ -22,7 +22,7 @@ jobs:
   linux:
     strategy:
       matrix:
-        target: [x86_64]
+        target: [aarch64, armhf, i686, riscv64, x86_64]
     runs-on: ubuntu-latest
     container:
       image: ubuntu:22.04
@@ -57,6 +57,30 @@ jobs:
         run: |
           ./deps/PawPaw/.github/workflows/bootstrap-deps.sh linux-${{ matrix.target }}
           apt-get install -yqq wget zip
+      - name: Setup dependencies (aarch64)
+        if: ${{ matrix.target == 'aarch64' }}
+        shell: bash
+        run: |
+          apt-get install -yqq libsdl2-dev:arm64
+          apt-get clean
+      - name: Setup dependencies (armhf)
+        if: ${{ matrix.target == 'armhf' }}
+        shell: bash
+        run: |
+          apt-get install -yqq libsdl2-dev:armhf
+          apt-get clean
+      - name: Setup dependencies (i686)
+        if: ${{ matrix.target == 'i686' }}
+        shell: bash
+        run: |
+          apt-get install -yqq libsdl2-dev:i386
+          apt-get clean
+      - name: Setup dependencies (riscv64)
+        if: ${{ matrix.target == 'riscv64' }}
+        shell: bash
+        run: |
+          apt-get install -yqq libsdl2-dev:riscv64
+          apt-get clean
       - name: Setup dependencies (x86_64)
         if: ${{ matrix.target == 'x86_64' }}
         shell: bash
@@ -185,7 +209,7 @@ jobs:
   windows:
     strategy:
       matrix:
-        target: [win64]
+        target: [win32, win64]
     runs-on: ubuntu-latest
     container:
       image: ubuntu:22.04
