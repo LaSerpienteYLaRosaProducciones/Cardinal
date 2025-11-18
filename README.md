@@ -9,7 +9,7 @@ Additional plugins:
 - [Sanguine Mutants](https://github.com/Bloodbat/SanguineMutants)
 - [Sanguine Monsters](https://github.com/Bloodbat/SanguineMonsters)
 
-Builds are available for Windows 64 bit, Intel based 64 bit Linux and both Arm and Intel based Apple hardware only.
+Builds are available for Windows, Linux and Apple hardware **only**, for the architectures listed below, in the original readme.
 
 Do note that, at the moment, **both the official DISTRHO Cardinal and Bat Cardinal can't be installed at the same time**: it is either one or the other (this may change in the future if these builds are still necessary).
 
