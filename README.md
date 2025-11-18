@@ -13,7 +13,7 @@ Builds are available for Windows, Linux and Apple hardware **only**, for the arc
 
 Do note that, at the moment, **both the official DISTRHO Cardinal and Bat Cardinal can't be installed at the same time**: it is either one or the other (this may change in the future if these builds are still necessary).
 
-The original readme follows.
+The original README follows, mostly untouched: it includes the plugins added by this build in the original available plugin list.
 
 ---
 
@@ -209,6 +209,8 @@ At the moment the following 3rd-party modules are provided:
 - [RCM](https://github.com/Rcomian/rcm-modules/)
 - [RebelTech](https://github.com/hemmer/rebel-tech-vcv)
 - [repelzen](https://github.com/wiqid/repelzen)
+- [Sanguine Monsters](https://github.com/Bloodbat/SanguineMonsters)
+- [Sanguine Mutants](https://github.com/Bloodbat/SanguineMutants)
 - [Sapphire](https://github.com/cosinekitty/sapphire)
 - [Sonus Modular](https://gitlab.com/sonusdept/sonusmodular)
 - [stocaudio](https://github.com/aptrn/stocaudio-modules)
