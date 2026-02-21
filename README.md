@@ -13,6 +13,12 @@ Builds are available for Windows, Linux and Apple hardware **only**, for the arc
 
 Do note that, at the moment, **both the official DISTRHO Cardinal and Bat Cardinal can't be installed at the same time**: it is either one or the other (this may change in the future if these builds are still necessary).
 
+A note about version numbers: Bat Cardinal follows the DISTRHO Cardinal version number but adds 20 to the "month" part of the version.
+
+For example, if DISTRHO Cardinal is version 26.01, then Bat Cardinal is version 26.21.
+
+This is done so Bat Cardinal and DISTRHO Cardinal can be more easily told apart.
+
 The original README follows, mostly untouched: it includes the plugins added by this build in the original available plugin list.
 
 ---
